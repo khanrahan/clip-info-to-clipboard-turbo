@@ -94,16 +94,6 @@ def scope_clip(selection):
 def get_media_panel_custom_ui_actions():
     """Python hook to add right click menu item."""
     return [{
-            'name': 'Copy...',
-            'actions': [{
-                    'name': TITLE,
-                    'isVisible': scope_clip,
-                    'execute': process_selection,
-                    'minimumVersion': '2020',
-                    'maximumVersion': '2023.1'
-            }]
-    },
-    {
             'hierarchy': [],
             'name': 'Copy...',
             'actions': [{
