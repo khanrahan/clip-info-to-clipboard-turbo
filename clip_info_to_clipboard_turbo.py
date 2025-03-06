@@ -30,7 +30,7 @@ To Install:
 """
 
 import flame
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 
 TITLE = 'Clip Info to Clipboard Turbo'
 VERSION_INFO = (1, 0, 0,)
@@ -110,6 +110,6 @@ def get_media_panel_custom_ui_actions():
                     'name': TITLE,
                     'isVisible': scope_clip,
                     'execute': process_selection,
-                    'minimumVersion': '2023.2'
+                    'minimumVersion': '2025.0.0.0'
            }]
     }]
