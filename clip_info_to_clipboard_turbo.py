@@ -2,13 +2,13 @@
 Script Name: Clip Info to Clipboard Turbo
 Written by: Kieran Hanrahan
 
-Script Version: 1.0.0
+Script Version: 2.0.0
 Flame Version: 2023.2
 
 URL: http://github.com/khanrahan/clip-info-to-clipboard-turbo
 
 Creation Date: 08.06.24
-Update Date: 08.06.24
+Update Date: 03.05.25
 
 Acknowledgements:
 
@@ -33,7 +33,7 @@ import flame
 from PySide6 import QtWidgets
 
 TITLE = 'Clip Info to Clipboard Turbo'
-VERSION_INFO = (1, 0, 0,)
+VERSION_INFO = (2, 0, 0,)
 VERSION = '.'.join([str(num) for num in VERSION_INFO])
 TITLE_VERSION = f'{TITLE} v{VERSION}'
 MESSAGE_PREFIX = '[PYTHON]'
