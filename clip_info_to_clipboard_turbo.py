@@ -2,13 +2,13 @@
 Script Name: Clip Info to Clipboard Turbo
 Written by: Kieran Hanrahan
 
-Script Version: 1.0.0
+Script Version: 2.0.0
 Flame Version: 2023.2
 
 URL: http://github.com/khanrahan/clip-info-to-clipboard-turbo
 
 Creation Date: 08.06.24
-Update Date: 08.06.24
+Update Date: 03.05.25
 
 Acknowledgements:
 
@@ -30,10 +30,10 @@ To Install:
 """
 
 import flame
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 
 TITLE = 'Clip Info to Clipboard Turbo'
-VERSION_INFO = (1, 0, 0,)
+VERSION_INFO = (2, 0, 0,)
 VERSION = '.'.join([str(num) for num in VERSION_INFO])
 TITLE_VERSION = f'{TITLE} v{VERSION}'
 MESSAGE_PREFIX = '[PYTHON]'
@@ -94,22 +94,12 @@ def scope_clip(selection):
 def get_media_panel_custom_ui_actions():
     """Python hook to add right click menu item."""
     return [{
-            'name': 'Copy...',
-            'actions': [{
-                    'name': TITLE,
-                    'isVisible': scope_clip,
-                    'execute': process_selection,
-                    'minimumVersion': '2020',
-                    'maximumVersion': '2023.1'
-            }]
-    },
-    {
             'hierarchy': [],
             'name': 'Copy...',
             'actions': [{
                     'name': TITLE,
                     'isVisible': scope_clip,
                     'execute': process_selection,
-                    'minimumVersion': '2023.2'
+                    'minimumVersion': '2025.0.0.0'
            }]
     }]
